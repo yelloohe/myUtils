@@ -1,0 +1,12 @@
+MVC:
+Struts1.x:servlet
+Struts2:filter
+SpringMvc:servlet
+
+--request(浏览器请求)------》DispacherServlet(最重要的，将请求分发)-->HandlerMapping---->Controller(action)----
+-->ModelAndView-->dispactherServlet--->ViewResolver（视图解析器）--->View(jsp)
+
+
+3种handlermapping
+
+3种控制器

@@ -1,0 +1,25 @@
+1,现在不实用dyanmic web project 这种方式新建项目了。原因为：不能实现服务器端的编译
+
+功能：
+
+		1.依赖管理： jar管理
+		2.打包
+		3.查看源代码
+		4.忽略IDE
+		
+结构：
+
+项目  local库 -->  private repository（aliyun/jboss） -->  central中央库(架包查找顺序)
+
+配置文件：
+ maven文件夹 -config-- settings.xml
+ 																		-->localRepository 本地库修改
+ 																		-->server的配置 username和userpassword
+ 																		-->mirror 配置私服地址
+ 																		
+私服（nexus管理的很多库)
+ repository 类型：
+ 1.hosted
+ 2.proxy
+ 3.virtual 兼容maven的版本
+ 4.group 暴露接口
